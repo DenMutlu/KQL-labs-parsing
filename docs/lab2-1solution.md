@@ -17,11 +17,11 @@
 - OK, first step is always to see the tables content and what data we can use,
 - Lets check the Books table and the shelves (take time to check all fields at disposition)
 
-![kql6](\assets\kql6.png){ align=center }
+![kql6](.\assets\kql6.png){ align=center }
 
 - when we delve into the data, to just check the fields it could take lot of time to load regarding the number of events, good practice is to use the ```kql | take 1```, to see a single row.
 
-![kq7](\assets\kql7.png){ align=center }
+![kq7](.\assets\kql7.png){ align=center }
 
 **The missing book is located on a shelf, so the actual weight of the self is higher than the sum of weights that are reported on that shelf because the book is missing the RFID.**
 
@@ -46,7 +46,7 @@ Shelves
 
 This results in a row for each book RFID and each shelf:
 
-![kq8](\assets\kql8.png){ align=center }
+![kq8](.\assets\kql8.png){ align=center }
 
 Now we’d like to sum of weights of the books on the self, so let’s [join](https://learn.microsoft.com/en-us/kusto/query/join-operator?view=azure-data-explorer) the `Shelves` table with the `Books` table, then we can utilize the [summarize](https://learn.microsoft.com/en-us/kusto/query/summarize-operator?view=azure-data-explorer) operator to do this aggregative calculation of sum of weights of books by shelf.
 
