@@ -42,7 +42,7 @@ Here is a log file
 Your goal is to have a field "port" in your favourite SIEM that show only the port number. You need to extract the port from the log using Regular Expression
 
 - 1) Use the [regex101](https://regex101.com/) website to craft your regex
-- 2) Insert a simple of the log into the "test strings" area ![Image title](\assets\regex1.png){ align=left }
+- 2) Insert a simple of the log into the "test strings" area ![Image title](https://github.com/DenMutlu/KQL-labs-parsing/tree/main/docs/assets\regex1.png){ align=center }
 - 3) Craft your query (without IA for the moment), if you are novice using regex [regex ressources](https://www.asic-world.com/scripting/regular_expression1.html)
 - 4) Test your query, step by step into the "regular expression" area to see if you catch is good or not
 - 5) If you struggle and you try at least 10 min to craft your query alone, use your favourite IA platform to craft the query 
