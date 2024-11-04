@@ -647,11 +647,11 @@
 </li>
 <li>Lets check the Books table and the shelves (take time to check all fields at disposition)</li>
 </ul>
-<p><a class="glightbox" href="\assets\kql6.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img align="center" alt="kql6" src="\assets\kql6.png" /></a></p>
+<p><a class="glightbox" href="../assets/kql6.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img align="center" alt="kql6" src="../assets/kql6.png" /></a></p>
 <ul>
 <li>when we delve into the data, to just check the fields it could take lot of time to load regarding the number of events, good practice is to use the <code>kql | take 1</code>, to see a single row.</li>
 </ul>
-<p><a class="glightbox" href="\assets\kql7.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img align="center" alt="kq7" src="\assets\kql7.png" /></a></p>
+<p><a class="glightbox" href="../assets/kql7.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img align="center" alt="kq7" src="../assets/kql7.png" /></a></p>
 <p><strong>The missing book is located on a shelf, so the actual weight of the self is higher than the sum of weights that are reported on that shelf because the book is missing the RFID.</strong></p>
 <p>The <code>Books</code> table has the following fields: </p>
 <ul>
@@ -668,7 +668,7 @@
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="p">|</span><span class="w"> </span><span class="k">mv-expand</span><span class="w"> </span><span class="n">rf_ids</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="k">typeof</span><span class="p">(</span><span class="k">string</span><span class="p">)</span>
 </span></code></pre></div>
 <p>This results in a row for each book RFID and each shelf:</p>
-<p><a class="glightbox" href="\assets\kql8.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img align="center" alt="kq8" src="\assets\kql8.png" /></a></p>
+<p><a class="glightbox" href="../assets/kql8.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img align="center" alt="kq8" src="../assets/kql8.png" /></a></p>
 <p>Now we’d like to sum of weights of the books on the self, so let’s <a href="https://learn.microsoft.com/en-us/kusto/query/join-operator?view=azure-data-explorer">join</a> the <code>Shelves</code> table with the <code>Books</code> table, then we can utilize the <a href="https://learn.microsoft.com/en-us/kusto/query/summarize-operator?view=azure-data-explorer">summarize</a> operator to do this aggregative calculation of sum of weights of books by shelf.</p>
 <p>We’re also interested in the reported weight of the shelf, we can <a href="https://learn.microsoft.com/en-us/kusto/query/take-any-aggregation-function?view=azure-data-explorer">take_any</a> of the weights of the duplicated (for each book) shelf rows.</p>
 <p>Lastly, we’d like to find the difference in weights of the shelves between :</p>
