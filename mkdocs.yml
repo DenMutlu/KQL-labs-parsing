@@ -5,8 +5,7 @@ theme:
   font:
     text: Merriweather Sans
     code: Red Hat Mono
-    icon:
-  logo: fontawesome-solid-d
+  logo: assets/logo.png
   favicon: assets/favicon.ico
   features:
     - navigation.footer
@@ -47,6 +46,8 @@ markdown_extensions:
       alternate_style: true
   - admonition
   - pymdownx.details
+plugins:
+  - search
 
 extra:
   social:
