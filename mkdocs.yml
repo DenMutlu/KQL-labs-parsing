@@ -26,6 +26,7 @@ theme:
       primary: blue
       accent: deep orange
 
+
 markdown_extensions:
   - attr_list
   - pymdownx.emoji:
@@ -46,10 +47,26 @@ markdown_extensions:
       alternate_style: true
   - admonition
   - pymdownx.details
+  - md_in_html
 plugins:
   - search
+  - glightbox
+  - awesome-pages
 
 extra:
   social:
     - icon: simple/linkedin
       link: https://linkedin.com/in/dmutlu
+
+nav:
+    - index.md
+    - parsing.md
+    - norm.md
+    - regex.md
+    - lab1.md
+    - lab1-solution.md
+    - lab2.md
+    - lab2-1.md
+    - lab2-1solution.md
+    - lab2-2.md
+    - detectives1.md
