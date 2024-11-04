@@ -2,7 +2,7 @@
 
 ##Explanation in English (french below)
 
-![Solution](\assets\regex2.png){ align=left }
+![Solution](.\assets\regex2.png){ align=left }
 
 ##Explanation in French
 
@@ -58,7 +58,7 @@ The pattern `(?<=\bproxy\s)\d+` will capture `8080` because:
 - "proxy" is followed by a space,
 - `8080` is a set of consecutive digits that appears right after "proxy ".
 
-![Solution](\assets\regex2.png){ align=left }
+![Solution](.\assets\regex2.png){ align=left }
 
 Cette expression régulière est conçue pour capturer un nombre qui apparaît immédiatement après le mot "proxy " (avec un espace après). Voici une explication détaillée de chaque composant de l'expression :
 

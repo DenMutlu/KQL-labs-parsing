@@ -1,5 +1,3 @@
-"weight": -9
-
 # Why use Regex in parsing?
 
 Regular expressions, or **regex**, are powerful tools used in parsing to search, match, and extract specific patterns from text data. When working with unstructured or semi-structured data sources, regex helps to identify and isolate relevant information, making it a key component in data parsing.

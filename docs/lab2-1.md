@@ -43,6 +43,6 @@ Add the following datas to your cluster
 // Import data for shelves
 .ingest into table Shelves ('https://kustodetectiveagency.blob.core.windows.net/digitown-books/shelves.csv.gz') with (ignoreFirstRecord=true)
 ```
-![kql5](\assets\kql5.png){ align=center }
+![kql5](.\assets\kql5.png){ align=center }
 
 ## Which shelf is the book on?
