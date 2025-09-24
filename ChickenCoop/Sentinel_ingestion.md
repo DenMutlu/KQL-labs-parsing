@@ -1,6 +1,10 @@
 
 # 🐔 Chicken Coop → Microsoft Sentinel Demo
 
+**Author:** Deniz Mutlu  
+**Microsoft MVP – Security**  
+**Talk: Optimizing Log Management for Microsoft Sentinel & Defender XDR**  
+
 This project shows how **any telemetry** (even from a chicken coop) can be ingested into **Microsoft Sentinel**,
 normalized with KQL functions, enriched with **analytics rules**, and visualized in **workbooks**.
 
