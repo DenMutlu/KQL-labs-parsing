@@ -1,6 +1,10 @@
 
 # 📜 Log Management & Audit Policy – Cheat Sheet
 
+**Author:** Deniz Mutlu  
+**Microsoft MVP – Security**  
+**Talk: Optimizing Log Management for Microsoft Sentinel & Defender XDR**  
+
 A quick reference for building a **log management policy** that balances security, cost, and operational efficiency.
 
 ---
