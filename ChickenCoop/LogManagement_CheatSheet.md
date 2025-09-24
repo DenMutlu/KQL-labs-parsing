@@ -43,8 +43,8 @@ A quick reference for building a **log management policy** that balances securit
 - [ ] Define **storage tiers**: Hot vs Warm vs Cold  
 - [ ] Define **cost control measures**: filtering, splitting tables, compression  
 - [ ] Define **alerting coverage**: map MITRE ATT&CK / detection gaps  
-- [ ] Define **audit requirements**: SOX, PCI, ISO 27001, NIS2, etc.  
-- [ ] Define **review cadence**: log policy reviewed quarterly/annually  
+- [ ] Define **audit requirements**: FINMA, CSSF, SOX, PCI, ISO 27001, NIS2, etc.  
+- [ ] Define **review cadence**: log policy reviewed quarterly/annually (assign owner)  
 
 ---
 
